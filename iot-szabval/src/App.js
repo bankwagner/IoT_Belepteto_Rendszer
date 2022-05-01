@@ -1,5 +1,4 @@
 
-import './App.css';
 import Nevbar from './Navbar';
 import Simple from './Simple';
 

@@ -1,12 +1,11 @@
+import video from "./video.mp4"
+
 const Navbar = () => {
     return ( 
-            <nav className="navbar">
-                <h1>Beléptető rendszer</h1>
-                <div className="modes">
-                    <a href="/">Basic</a>
-                    <a href="diagram">Diagram</a>
-                </div>
-            </nav>
+            <section className="navbar">
+                <video src={video} autoPlay={true} loop muted ></video>
+                <h1 className="title">Beléptető rendszer</h1>
+            </section>
      );
 }
  
