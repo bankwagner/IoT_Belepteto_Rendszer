@@ -7,9 +7,12 @@
   color: #333;
 }
 
+
 body{
-  background-image: url("back_2.jpg");
+  /*background-image: url("back_2.jpg");
   background-size: auto;
+*/
+
 }
 
 .navbar{
@@ -43,4 +46,65 @@ body{
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.container {
+  /* Used to position the diagonal area */
+  position: relative;
+  color: #333;
+}
+
+.container__diagonal {
+  /* Absolute position */
+  left: 0px;
+  position: absolute;
+  top: 0px;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  /* Create diagonal sides */
+  transform: skewY(-5deg);
+
+  /* Background color */
+  background-color: rgba(0, 0, 0);
+
+  /* Displayed under the main content */
+  z-index: 1;
+}
+
+
+.cards {
+  display: flex;
+  position: relative;
+
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
+
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.cards__item {
+  /* There will be 4 cards per row */
+  flex-basis: 25%;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  background:rgba(0, 0, 0, 0.3);
+  content: '';
+
+  /* Position */
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(1rem, 1rem);
+
+  /* Size */
+  height: 100%;
+  width: 100%;
+  /* Display under the main content */
+  z-index: -1;
 }

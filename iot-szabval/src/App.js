@@ -1,6 +1,8 @@
 
 import Nevbar from './Navbar';
 import Simple from './Simple';
+import Cards from './Cards';
+import Container from './Container';
 
 function App() {
   
@@ -9,7 +11,9 @@ function App() {
     <div className="App">
       <Nevbar/>
       <div className='content'>
+        <Container/>
         <Simple/>
+        <Cards/>
       </div>
     </div>
   );
